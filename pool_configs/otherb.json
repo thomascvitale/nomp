@@ -1,0 +1,69 @@
+{
+    "enabled": true,
+    "coin": "otherb.json",
+
+    "address": "VSoQt6nQBMtHQ2x1taXG8ptNdQ9sKjAPCY",
+
+    "rewardRecipients": {
+        "VHoVuBAWKBcDMT8WQSf9FTTXpE9TTx1JF5": 1
+    },
+
+    "paymentProcessing": {
+        "enabled": false,
+        "paymentInterval": 20,
+        "minimumPayment": 70,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 19332,
+            "user": "testuser",
+            "password": "testpass"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 8
+        },
+        "3333": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9993,
+            "user": "",
+            "password": ""
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "MPOS",
+        "password": "",
+        "database": "otherb",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
